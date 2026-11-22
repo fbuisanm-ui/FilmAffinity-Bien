@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet"> <!-- Enlace a la fuente -->
+  <style>
+    .bmc-button {
+      display: inline-block;
+      background-color: #FFDD00; /* Color de fondo */
+      color: #000000; /* Color del texto */
+      font-family: 'Cookie', cursive; /* Tipo de letra */
+      font-size: 17px; /* Tamaño de la fuente */
+      padding: 3px 20px; /* Espaciado */
+      border: 2px solid #000000; /* Color del borde */
+      border-radius: 10px; /* Bordes redondeados */
+      text-decoration: none; /* Sin subrayado */
+      transition: background-color 0.3s; /* Transición para hover */
+      align-items: center; /* Centrar elementos en el botón */
+      line-height: 1; /* Altura de línea para ajustar el texto */
+    }
+
+    .bmc-button:hover {
+      background-color: #ffffff; /* Cambiar color al pasar el mouse */
+      color: #000000; /* Cambiar color del texto al pasar el mouse */
+    }
+
+    .btn-icon {
+      margin-right: 4px; /* Espaciado entre el icono y el texto */
+      border-radius: 4px;
+   
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-content">
+    <label>
+      <input type="checkbox" id="toggleValoradas" class="ui-checkbox"> Ocultar valoradas
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" id="toggleCritica" class="ui-checkbox"> Ocultar por crítica
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" id="toggleEffects" class="ui-checkbox"> Ocultar bloqueadas
+    </label>
+    <br><br>
+
+    <!-- Enlace de Buy Me a Coffee con un icono -->
+    <a href="https://www.buymeacoffee.com/bmferrano" target="_blank" class="bmc-button">
+      <img src="Coffe.png" alt="Café" class="btn-icon" style="width: 20px; height: 20px;"> <!-- Icono de café -->
+      Buy me a coffee
+    </a>
+
+
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
